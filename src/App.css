@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  font-family: 'Roboto', cursive;
+  color: "#d14f4f";
+  line-height: 1.7;
+  font-size: 19px;
+}
+.navbar{
+  justify-content: center !important;
+}
+.link{
+  color: #454545;
+  display: inline-block;
+  padding: 3px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+.link:hover{
+  color: #233371;
+  transform: scale(1.1);
+  border: 1px solid #233371;
+  border-radius: 5px;
+}
+
+/* .home{
+  display: flex;
+  height: 200vh;
+  align-items: center;
+  justify-content: center;
+} */
+
+.home-link{
+  font-size: 40px;
+  background: #f59494;
+  display: inline-block;
+  padding: 40px 80px;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  text-transform: uppercase;
+}
+.home-link:hover{
+  border-radius: 5px;
+  background-attachment: #e77171;
+
+}
+.home{
+  position: relative;
+}
+#video{
+  width: 100%;
+  height: 100%;
+}
+
+.astronomy-pic {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 20px;
+	box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+  transition: all 0.3s;
+  transform: scale(1, 1);
+}
+.marsRover-pic{
+  position: absolute;
+  left: 39%;
+  top: 55%;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 20px;
+	box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+  transition: all 0.3s;
+  transform: scale(1, 1);
+}
+.astronomy-pic:hover, .marsRover-pic:hover{
+  border: none;
+}
+
+.astronomy-pic::before, .astronomy-pic::after,
+.marsRover-pic::before, .marsRover-pic::after {
+  content: '';
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  /* width: 100%;
+  height: 100%; */
+  z-index: 1;
+}
+
+/* BTN STYLE */
+.btn-style::before, .btn-style::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+	height: 100%;
+  bottom: 0;
+	left: 0;
+	z-index: 1;
+  transition: all 0.3s;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.btn-style:hover::after {
+  animation-name: rotatecw;
+  animation-duration: 2s;
+}
+.btn-style:hover::before {
+  animation-name: rotateccw; 
+  animation-duration: 3s;
+}
+.btn-style:hover::after, .btn-style:hover::before {
+  left: 0px;
+  width: 100%;
+  height: 120px;
+  top: -35px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotatecw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotateccw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+.nasa-photo{
+  display: flex;
+  padding: 40px;
+  margin: 0 auto;
+  max-height: 100%;
+}
+.nasa-photo img{
+  width: 60%;
+  margin-right: 50px;
+  object-fit: contain;
+  box-shadow: 0 10px 25px 0px rgb(0 0 0 / 60%);
+}
+.nasa-photo h1{
+  font-size: 42px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.nasa-photo .date{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #454545;
+}
+.nasa-photo .explanation{
+  color: #454545;
+  font-size: 16px;
+}
+
+
+
+@media (max-width: 1280px){
+  .nasa-photo {
+    display: block;
+  }
+  .nasa-photo img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 800px){
+  .navbar ul{
+    padding: 0px;
+  }
+  .astronomy-pic{
+    top: 27%;
+    left: 34%;
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  .marsRover-pic{
+    top: 47%;
+    left: 19%;
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  .nasa-photo {
+    padding: 20px;
+  }
+  .nasaPhoto-content h1{
+    font-size: 32px;
+  }
+  .rockets-title, .history-title{
+    font-size: 32px;
+  }
+  .rockets {
+    margin: 30px 0px !important;
+    display: block !important;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 0.5fr)) !important;
+  }
+  .each-rocket img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .each-history {
+    margin: 50px 20px !important;
+  }
+  .each-history h3{
+    font-size: 26px;
+  }
+  .each-history .details{
+    font-size: 16px;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+ }
+ 100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+ }
+}
+
+.nasaPhoto-content {
+  opacity: 0; 
+  animation: fadeInRight 2s ease-in-out 0s forwards;
+  margin-top: 100px;
+  text-align: center;
+}
+.card{
+  border: none;
+}
+
+.history{
+  text-align: center;
+}
+.each-history{
+  margin: 100px 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 30%);
+}
+.each-history h3{
+  color: #007bff;
+}
+.each-history .history-date{
+  text-decoration: underline;
+}
+
+.slide{
+  text-align: center;
+}
+.each-rocket img{
+  width: 650px;
+  height: 490px;
+}
+.rockets{
+  margin: 100px 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 0.5fr));
+  grid-row-gap: 6rem;
+  grid-column-gap: 50px;
+  justify-items: center;
+}
+.rockets-title{
+  text-align: center;
+  margin: 100px 0px 10px 0px;
+}
+.history-title{
+  text-align: center;
+  margin: 150px 0px 20px 0px
+}
+.rocket-info h5{
+  font-size: 16px;
+}
+.rocket-info p{
+  font-size: 14px;
+}
+.rocket-description{
+  font-size: 14px;
+  padding: 0 25px;
+}
+.separator{
+  border: 2px solid #454545;
+  width: 30%;
+  transform: translate(115%, 0px);
+}
+.each-rocket{
+  text-align: center;
+  box-shadow: 0 10px 25px 0 rgb(0 0 0 / 30%);
+}
+
+
+.footer{
+  text-align: center;
+  margin: 10px 0;
+}
+.footer a{
+  color: #454545;
+}
+/* .footer a:hover{
+  text-decoration: none;
+} */
+.footer img{
+  width: 45px;
+}
+
+.filter-wrapper{
+  margin: auto;
+  width: 14%;
+  position: relative;
+  top: 80px;
+}
+.filter-wrapper select{
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  padding: 5px 20px;
+  text-align: center;
+}
