@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1d207021.chunk.css",
+    "main.js": "/static/js/main.f2476863.chunk.js",
+    "main.js.map": "/static/js/main.f2476863.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.eb14b5ce.js",
+    "runtime-main.js.map": "/static/js/runtime-main.eb14b5ce.js.map",
+    "static/css/2.fb7dbf56.chunk.css": "/static/css/2.fb7dbf56.chunk.css",
+    "static/js/2.bf91be30.chunk.js": "/static/js/2.bf91be30.chunk.js",
+    "static/js/2.bf91be30.chunk.js.map": "/static/js/2.bf91be30.chunk.js.map",
+    "static/js/3.f02f7818.chunk.js": "/static/js/3.f02f7818.chunk.js",
+    "static/js/3.f02f7818.chunk.js.map": "/static/js/3.f02f7818.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.fb7dbf56.chunk.css.map": "/static/css/2.fb7dbf56.chunk.css.map",
+    "static/css/main.1d207021.chunk.css.map": "/static/css/main.1d207021.chunk.css.map",
+    "static/js/2.bf91be30.chunk.js.LICENSE.txt": "/static/js/2.bf91be30.chunk.js.LICENSE.txt",
+    "static/media/Astronomy-earth.217bc138.mp4": "/static/media/Astronomy-earth.217bc138.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eb14b5ce.js",
+    "static/css/2.fb7dbf56.chunk.css",
+    "static/js/2.bf91be30.chunk.js",
+    "static/css/main.1d207021.chunk.css",
+    "static/js/main.f2476863.chunk.js"
+  ]
+}
